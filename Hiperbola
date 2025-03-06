@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Eje (y)
+valores_y = np.linspace(-10, 10, 400)
+
+# Eje (x)
+rama_derecha_x = np.sqrt(valores_y**2 + 1)  # lado derecho
+rama_izquierda_x = -np.sqrt(valores_y**2 + 1)  # lado izquierda
+
+# Crear cuadro
+plt.figure(figsize=(6, 6))
+
+# Las ramas de la hipérbola
+plt.plot(rama_derecha_x, valores_y, color="pink")
+plt.plot(rama_izquierda_x, valores_y, color="purple")
+
+plt.title("Hipérbola", fontsize=15)
+plt.xlabel("Eje X")
+plt.ylabel("Eje Y")
+plt.grid(True)
+plt.show()
