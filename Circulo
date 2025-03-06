@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+circle = plt.Circle((5, 5), 2, color='pink', fill=True)
+ax.add_artist(circle)
+
+ax.set_xlim(0, 10)
+ax.set_ylim(0, 10)
+ax.set_aspect('equal', adjustable='box')
+plt.grid(True)
+plt.show()
