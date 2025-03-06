@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(-20, 20, 1000)
+y = x**2
+
+plt.plot(x, y, color='pink')
+plt.title('Parábola')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.grid(True)
+plt.show()
